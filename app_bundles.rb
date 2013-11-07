@@ -28,3 +28,8 @@ dep 'Microsoft Office', :template => 'installer' do
   prefix '/Applications/Microsoft Office 2011'
   provides %w[Excel Word PowerPoint Outlook].map {|i| "Microsoft #{i}.app" }
 end
+
+dep 'Adium.app' do
+  source 'http://aarnet.dl.sourceforge.net/project/adium/Adium_1.5.8.dmg'
+  version '>= 1.5.8'
+end
